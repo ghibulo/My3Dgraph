@@ -1,15 +1,19 @@
 # depslib dependency file v1.0
-1468632922 source:/home/ghibulo/Dropbox/programovani/ansiC++/pokAllegro/main.cpp
+1468688765 source:/home/ghibulo/Dropbox/programovani/ansiC++/pokAllegro/main.cpp
 	<stdio.h>
+	<iostream>
 	<allegro5/allegro.h>
 	<allegro5/allegro_font.h>
 	<allegro5/allegro_ttf.h>
 	<allegro5/allegro_primitives.h>
 	"CoordSystem.h"
 
-1468631551 source:/home/ghibulo/Dropbox/programovani/ansiC++/pokAllegro/src/CoordSystem.cpp
+1468689424 source:/home/ghibulo/Dropbox/programovani/ansiC++/pokAllegro/src/CoordSystem.cpp
 	"CoordSystem.h"
 	<cmath>
+	<allegro5/allegro_primitives.h>
 
-1468630796 /home/ghibulo/Dropbox/programovani/ansiC++/pokAllegro/include/CoordSystem.h
+1468688933 /home/ghibulo/Dropbox/programovani/ansiC++/pokAllegro/include/CoordSystem.h
+	<cmath>
+	<iostream>
 
