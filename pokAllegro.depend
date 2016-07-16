@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1468688765 source:/home/ghibulo/Dropbox/programovani/ansiC++/pokAllegro/main.cpp
+1468691313 source:/home/ghibulo/Dropbox/programovani/ansiC++/pokAllegro/main.cpp
 	<stdio.h>
 	<iostream>
 	<allegro5/allegro.h>

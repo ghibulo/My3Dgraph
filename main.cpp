@@ -1,5 +1,3 @@
-
-
 #include <stdio.h>
 #include <iostream>
 
@@ -16,7 +14,7 @@ const int hr = 200;
 
 double myFunction(double x, double z) {
 
-    return 0.01*x*x+0.01*z*z-200;
+    return 0.01*x*x-0.01*z*z-200;
 }
 
 void refreshScreen(ALLEGRO_BITMAP *bg, ALLEGRO_BITMAP *sc, ALLEGRO_DISPLAY *display) {
@@ -73,9 +71,7 @@ int main(int argc, char **argv){
    }
 
    al_set_target_bitmap(backgr);
-
    al_clear_to_color(al_map_rgb(50,10,70));
-   //al_draw_line(0,0,1024,400,al_map_rgb(255,0,255) , 1);
    al_draw_text(font, al_map_rgb(255,255,255), 640/2, (480/4),ALLEGRO_ALIGN_CENTRE, "Vlastni 3D grafy");
 
 
@@ -84,14 +80,11 @@ int main(int argc, char **argv){
    al_draw_bitmap(backgr,0,0,0);
    refreshScreen(backgr, scr, display);
 
-
-
-
    Pos2 bod1=cosyst.getAbsPosition(Pos3(0.5,0,0));
    int y;
 
    while (true) {
-   //parted according to z
+       //parted according to z
        for (int z=-hr;z<hr;z+=delta) {
            y = myFunction(-hr-1,z);
            bod1=cosyst.pos3Topos2(Pos3(-hr-1,y,z));
@@ -111,14 +104,7 @@ int main(int argc, char **argv){
        }
        refreshScreen(backgr, scr, display);
        cosyst.addToAlpha(0.005);
-
-       //al_rest(0.5);
    }
-
-
-   //al_flip_display();
-
-
 
    al_destroy_display(display);
 
